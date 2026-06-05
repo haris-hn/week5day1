@@ -9,7 +9,7 @@ import { Comment, CommentSchema } from './comments/comment.schema';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb+srv://haris:Haris123@cluster1.tpsiw8f.mongodb.net/comments-app'),
+    MongooseModule.forRoot('your-mongodb-url'),
 
     MongooseModule.forFeature([
       { name: User.name, schema: UserSchema },
